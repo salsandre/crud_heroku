@@ -1,9 +1,11 @@
+const newrelic = require ('newrelic');
 const express = require('express');
 const fileUpload = require('express-fileupload');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const path = require('path');
 const app = express();
+
 
  const {getHomePage} = require('./routes/index');
  const {addPlayerPage, addPlayer, deletePlayer, editPlayer, editPlayerPage} = require('./routes/player');
