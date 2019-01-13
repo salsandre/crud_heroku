@@ -104,16 +104,16 @@ module.exports = {
 
             let image = result[0].image;
 
-            fs.unlink(`public/assets/img/${image}`, (err) => {
-                if (err) {
-                    return res.status(500).send(err);
-                }
+            //fs.unlink(`public/assets/img/${image}`, (err) => {
+              //  if (err) {
+                //    return res.status(500).send(err);
+                //}
                 db.query(deleteUserQuery, (err, result) => {
                     if (err) {
                         return res.status(500).send(err);
                     }
                     res.redirect('/');
-                });
+               // });
             });
        
        
