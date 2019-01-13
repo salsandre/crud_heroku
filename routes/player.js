@@ -115,8 +115,10 @@ module.exports = {
                     res.redirect('/');
                 });
             });
+       */
+       
         });
-   */
+   
     }
 
 };
