@@ -103,7 +103,7 @@ module.exports = {
             }
 
             let image = result[0].image;
-
+/*
             fs.unlink(`public/assets/img/${image}`, (err) => {
                 if (err) {
                     return res.status(500).send(err);
@@ -116,5 +116,7 @@ module.exports = {
                 });
             });
         });
+   */
     }
+
 };
